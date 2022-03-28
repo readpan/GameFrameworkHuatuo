@@ -1,0 +1,3 @@
+[submodule "Assets/UGF"]
+	path = Assets/UGF
+	url = git@github.com:readpan/UnityGameFramework.git
