@@ -1,6 +1,6 @@
 ﻿using GameFramework.Fsm;
 using GameFramework.Procedure;
-using UnityEngine;
+using UnityGameFramework.Runtime;
 
 namespace Hotfix.Procedure
 {
@@ -9,7 +9,7 @@ namespace Hotfix.Procedure
         protected override void OnEnter(IFsm<IProcedureManager> procedureOwner)
         {
             base.OnEnter(procedureOwner);
-            Debug.Log("来啦！老弟!");
+            Log.Info("来啦！老弟!3.0");
         }
     }
 }

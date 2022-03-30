@@ -13,7 +13,7 @@ namespace MainProject.Scripts.Procedure
             base.OnEnter(procedureOwner);
             var hotfixComponent = GameEntry.GetComponent<HotfixComponent>();
             await hotfixComponent.UpdateAndLoadHotfixDll();
-            await GameEntry.GetComponent<ProcedureComponent>().UpdateHotProcedure();
+            GameEntry.GetComponent<ProcedureComponent>().UpdateHotProcedure();
             await UniTask.Yield();
             var mgr =GameFrameworkEntry.GetModule<IProcedureManager>();
             mgr.StartProcedure(HotfixComponent.HotfixAssembly.GetType("Hotfix.Procedure.ProcedureHotfix"));
