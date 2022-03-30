@@ -146,6 +146,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.UGFHuatuo2
     Standalone: com.DefaultCompany.UGF-Huatuo2
   buildNumber:
     Standalone: 0

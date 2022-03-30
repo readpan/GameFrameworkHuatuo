@@ -1,8 +1,9 @@
 ﻿using GameFramework.Fsm;
 using GameFramework.Procedure;
+using MainProject.Scripts.Procedure;
 using UnityGameFramework.Runtime;
 
-namespace GameMain
+namespace MainProject.Scripts.Procedure
 {
     public class ProcedureInit : ProcedureBase
     {
@@ -10,7 +11,7 @@ namespace GameMain
         {
             base.OnEnter(procedureOwner);
 
-            ChangeState(procedureOwner, HotfixComponent.HotfixAssembly.GetType("Hotfix.Procedure.ProcedureHotfix"));
+            ChangeState<ProcedureUpdateResource>(procedureOwner);
         }
     }
 }
